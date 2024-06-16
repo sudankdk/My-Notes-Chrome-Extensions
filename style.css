@@ -1,0 +1,114 @@
+body {
+  font-family: "Press Start 2P", sans-serif;
+  background-color: #1a1b26;
+  color: #a9b1d6;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  min-width: 300px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #7aa2f7;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #3b4261;
+  border-radius: 4px;
+  background-color: #1a1b26;
+  color: #a9b1d6;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#notes-container {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid #3b4261;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #1a1b26;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #3b4261;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #2e3440;
+  color: #a9b1d6;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #7aa2f7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #bb9af7;
+}
+
+button.delete {
+  background-color: #ff6c6b;
+  padding: 5px 10px;
+  font-size: 14px;
+  width: auto;
+  margin-left: 10px;
+}
+
+button.delete:hover {
+  background-color: #ff4c4b;
+}
+
+#search {
+  border-color: #ff9e64;
+}
+
+.note:hover {
+  background-color: #3b4261;
+}
+
+::placeholder {
+  color: #565f89;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  textarea,
+  button {
+    font-size: 14px;
+  }
+}

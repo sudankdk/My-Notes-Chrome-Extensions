@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "My Note Extension",
+  "version": "1.0",
+  "description": "A simple note-taking Chrome extension.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
